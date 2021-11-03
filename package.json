@@ -7,6 +7,8 @@
   "build": {
     "appId": "com.clipboardavy"
   },
+  "files": ["./build/**/*"],
+  "asarUnpack": "**/build/*",
   "homepage": "./",
   "private": true,
   "config": {
