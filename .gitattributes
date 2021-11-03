@@ -1,1 +1,2 @@
 dist/**/* filter=lfs diff=lfs merge=lfs -text
+dist/mac/Clipboardavy.app/Contents/Frameworks/Electron[[:space:]]Framework.framework/Versions/A/Electron[[:space:]]Framework filter=lfs diff=lfs merge=lfs -text
