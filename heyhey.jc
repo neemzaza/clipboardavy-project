@@ -1,0 +1,6 @@
+// Codwavy
+class ExampleClass {
+    main - {
+        log("Hello world!!")
+    }
+}
