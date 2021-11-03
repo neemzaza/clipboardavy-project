@@ -1,6 +1,6 @@
 // Codwavy
 class ExampleClass {
-    main - {
-        log("Hello world!!")
-    }
+    main:
+    - log("Hello world!!")
+    - for (i = 0, i < 11, i+)
 }
