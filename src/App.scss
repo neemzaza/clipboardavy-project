@@ -176,6 +176,8 @@ body {
 
 .clipboard-text {
   // padding-bottom: 0.5rem;
+  width: 100%;
+  text-align: center;
 
   .click-selection {
     width: 100%;
@@ -185,6 +187,19 @@ body {
     transform: translateX(-33%);
 
     &:active::after {
+      content: "Copied";
+      position: absolute;
+      right: 0;
+      margin-right: 3.5rem;
+      margin-top: 0.5rem;
+      top: 0;
+      background: rgb(38, 163, 0);
+      padding: 0.3rem;
+      border-radius: 0.5rem;
+      font-size: 0.8rem;
+    }
+
+    &:focus:after {
       content: "Copied";
       position: absolute;
       right: 0;

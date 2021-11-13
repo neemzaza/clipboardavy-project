@@ -5,6 +5,9 @@ app.setName("Clipboardavy")
 
 const { TouchBarLabel } = TouchBar
 
+const builder = require('electron-builder');
+const Platform = builder.Platform
+
 const db = require('./db/stores/todoItem');
 
 const isDev = require('electron-is-dev');
@@ -112,3 +115,15 @@ app.on('activate', () => {
     createWindow();
   }
 });
+
+builder.build({
+  config: {
+    icon: "../build/appicon/icons/png/1024x1024.png",
+    appId: "com.clipboardavy",
+    directories: {
+      buildResources: "../build/appicon/icons/png/1024x1024.png",
+      app: "../",
+      output: "../dist"
+    }
+  }
+})

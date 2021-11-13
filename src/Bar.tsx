@@ -20,7 +20,7 @@ function Bar() {
     useEffect(() => {
         readAllFunc()
         ipc.send('updateTouchBar')
-    })
+    }   )
 
     const onClose = () => {
         ipc.send('closeApp')
