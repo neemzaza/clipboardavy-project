@@ -1,3 +1,3 @@
 # Clipboardavy
 
-This is open source 
+Open source 
